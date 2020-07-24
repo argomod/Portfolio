@@ -39,7 +39,7 @@ const SelectedWorkCard = styled.div`
 
 function SelectedWork() {
     return (
-        <SelectedWorkContainer className="spacing-medium-top spacing-medium-bottom">
+        <SelectedWorkContainer className="spacing-large-top">
             <SelectedWorkHeader className="spacing-small-bottom">Selected work</SelectedWorkHeader>
             <SelectedWorkContent>
                 <SelectedWorkCard>

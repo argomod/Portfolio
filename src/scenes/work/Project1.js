@@ -21,14 +21,14 @@ const transition = {
 function Work() {
     return (
     <motion.div initial="initial" animate="in" exit="out" variants={variants} transition={transition}>
-      <Intro className="spacing-large-top spacing-medium-bottom">
+      <Intro className="spacing-large-top">
         <IntroHeader className="spacing-medium-bottom">
           <Link className="micro-text light-text spacing-xsmall-bottom" to="/">Matt Argo</Link>
           <h1>Video content system for Hackster</h1>
         </IntroHeader>
         <IntroContent><div className="dummy-image-4-by-3"></div></IntroContent>
       </Intro>
-      <Section className="spacing-medium-top spacing-medium-bottom">
+      <Section className="spacing-large-top">
         <SectionHeader>Research</SectionHeader>
           <SectionContent>
             <p>I like working with passionate folks & companies whose purpose extends beyond what they sell.</p>
@@ -36,7 +36,7 @@ function Work() {
             <p>I am especially passionate about inclusive design, accessibility, and the intersection of design + development. I am also an evironmentalist and believe good design can help mitigate our climate crisis.</p>
             <p>I am currently looking for a new role. I’ve worked for Airbnb and Hackster.</p>
             <img className="spacing-medium-top" src={image} alt="This is an image." />
-            <p aria-hidden="true" className="small-text spacing-xsmall-top caption-text">Test</p>
+            <p aria-hidden="true" className="micro-text spacing-xsmall-top caption-text">Test</p>
           </SectionContent>
       </Section>
     </motion.div>

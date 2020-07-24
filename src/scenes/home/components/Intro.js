@@ -27,7 +27,7 @@ const IntroContent = styled.div`
 
 function Intro() {
     return (
-        <IntroContainer className="spacing-large-top spacing-medium-bottom">
+        <IntroContainer className="spacing-large-top">
             <IntroHeader>
                 Hi, I’m Matt Argomaniz.
             </IntroHeader>

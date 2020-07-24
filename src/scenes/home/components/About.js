@@ -31,7 +31,7 @@ const AboutContent = styled.div`
 
 function About() {
     return (
-        <AboutContainer className="spacing-medium-top spacing-medium-bottom">
+        <AboutContainer className="spacing-large-top">
             <AboutHeader>More about me</AboutHeader>
             <AboutContent>
                 <p>I like working with passionate folks & companies whose purpose extends beyond what they sell.</p>
