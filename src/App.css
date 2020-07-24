@@ -1,38 +1,126 @@
-.App {
+/* ==AWESOME VARIABLE ZONE== */
+/* 1. Global */
+:root {
+  --line-height: 1.38;
+}
+/* 2. Font sizes */
+:root {
+  --body-font-size: 1.2rem;
+  --small-font-size: .96rem;
+  --micro-font-size: .8rem;
+}
+@media only screen and (min-width: 1023px) {
+  :root {
+    --body-font-size: 1.375rem;
+    --small-font-size: 1.1rem;
+    --micro-font-size: .9rem;
+  }
+}
+/* 3. Colors */
+:root {
+  --background-color: #ffffff;
+  --font-color: #000000;
+  --sec-color: #898989;
+  --cta-background: #707144;
+  --visited-link: #0041FF;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #101011;
+    --font-color: #f2f1ef;
+    --sec-color: #a9a9a9;
+    --cta-background: #f4ffc8;
+    --visited-link: #8487f7;
+  }
+}
+/* 4. Spacing */
+:root {
+  --spacing-xxsmall: calc(var(--line-height)*var(--body-font-size)* 0.2);
+  --spacing-xsmall: calc(var(--line-height)*var(--body-font-size)* 0.5);
+  --spacing-small: calc(var(--line-height)*var(--body-font-size)* 1);
+  --spacing-medium: calc(var(--line-height)*var(--body-font-size)* 1.5);
+  --spacing-large: calc(var(--line-height)*var(--body-font-size)* 3);
+  --spacing-xlarge: calc(var(--line-height)*var(--body-font-size)* 5);
+}
+
+
+/* ==GLOBAL ZONE== */
+/* This area shouldn't need edits. For tweaks, go to the Awesome Variable Zone */
+
+/* Colors */
+body {
+  background: var(--background-color);
+  color: var(--font-color)
+}
+h2, h3 { color: var(--sec-color) }
+.light-text { color: var(--sec-color) }
+.dark-text { color: var(--font-color) }
+
+/* Spacing */
+.spacing-xxsmall-top    { padding-top: var(--spacing-xxsmall) !important }
+.spacing-xsmall-top     { padding-top: var(--spacing-xsmall) !important }
+.spacing-small-top      { padding-top: var(--spacing-small) !important }
+.spacing-medium-top     { padding-top: var(--spacing-medium) !important }
+.spacing-large-top      { padding-top: var(--spacing-large) !important }
+.spacing-xlarge-top     { padding-top: var(--spacing-xlarge) !important }
+.spacing-xxsmall-bottom { padding-bottom: var(--spacing-xxsmall) !important }
+.spacing-xsmall-bottom  { padding-bottom: var(--spacing-xsmall) !important }
+.spacing-small-bottom   { padding-bottom: var(--spacing-small) !important}
+.spacing-medium-bottom  { padding-bottom: var(--spacing-medium) !important }
+.spacing-large-bottom   { padding-bottom: var(--spacing-large) !important }
+.spacing-xlarge-bottom  { padding-bottom: var(--spacing-xlarge) !important }
+
+/* Typography */
+body {
+  font-size: var(--body-font-size);
+  line-height: var(--line-height);
+  font-family: 'GT America Medium', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased
+}
+.small-text {
+  font-size: var(--small-font-size);
+}
+.micro-text {
+  font-size: var(--micro-font-size);
+}
+.caption-text {
   text-align: center;
+  color: var(--sec-color)
+}
+p:not(:last-child), h2:not(:last-child), h1:not(:last-child){
+  margin-bottom: var(--spacing-xsmall)
+}
+@font-face {
+  font-family: 'GT America Regular';
+  src: url('/fonts/GT-America-Standard-Regular.woff2') format('woff2'),
+       url('/fonts/GT-America-Standard-Regular.woff') format('woff');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'GT America Medium';
+  src: url('/fonts/GT-America-Standard-Medium.woff2') format('woff2'),
+       url('/fonts/GT-America-Standard-Medium.woff') format('woff');
+  font-weight: medium;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dummy images */
+.dummy-image-4-by-3 {
+  height: 0;
+  background:var(--font-color);
+  opacity: 10%;
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
+  border-radius: .25em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Border radius for images */
+img { border-radius: 0.25rem }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Links */
+.no-link-underline { text-decoration: none }
+a:visited.visited-link { color: var(--visited-link) }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* html {
+  scroll-behavior: smooth;
+} */
