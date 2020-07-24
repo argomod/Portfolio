@@ -6,7 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { WebsiteLayout, WebsiteContent } from "./Global";
 import CTA  from "./components/CTA";
 import Footer from './components/Footer';
-import Work from './scenes/work/Work';
+import Project1 from './scenes/work/Project1';
 import Home from './scenes/home/Home';
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
           <WebsiteContent>
             <AnimatePresence>
               <Switch>
-                <Route path="/work"> <ScrollToTop /> <Work />  </Route>
+                <Route path="/project-1"> <ScrollToTop /> <Project1 />  </Route>
                 <Route exact path="/"> <Home /> <ScrollToTop /> </Route>
               </Switch>
             </AnimatePresence>

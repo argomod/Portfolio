@@ -43,24 +43,24 @@ function SelectedWork() {
             <SelectedWorkHeader className="spacing-small-bottom">Selected work</SelectedWorkHeader>
             <SelectedWorkContent>
                 <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/work"><div className="dummy-image-4-by-3"></div></Link>
+                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
                     <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
+                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
                 </SelectedWorkCard>
                 <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/work"><div className="dummy-image-4-by-3"></div></Link>
+                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
                     <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
+                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
                 </SelectedWorkCard>
                 <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/work"><div className="dummy-image-4-by-3"></div></Link>
+                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
                     <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
+                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
                 </SelectedWorkCard>
                 <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/work"><div className="dummy-image-4-by-3"></div></Link>
+                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
                     <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
+                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
                 </SelectedWorkCard>
             </SelectedWorkContent>
         </SelectedWorkContainer>
