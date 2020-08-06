@@ -17,7 +17,7 @@ const CoolCTA = styled.div`
 `
 function CTA() {
     return (
-        <CoolCTA className="micro-text">Black lives matter. Please donate $10 to Campaign Zero →</CoolCTA>
+        <CoolCTA as="a" href="https://www.joincampaignzero.org/"  target="_blank" className=" no-link-underline micro-text">Black lives matter. Please donate $10 to Campaign Zero <span aria-hidden="true">→</span></CoolCTA>
     );
 }
 

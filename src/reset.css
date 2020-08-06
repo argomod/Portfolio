@@ -29,7 +29,7 @@ dd {
   margin: 0;
   font-size: inherit;
   font-weight: normal;
-  text-align: left
+  text-align: left;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

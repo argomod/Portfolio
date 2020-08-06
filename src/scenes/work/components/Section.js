@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Breakpoint } from '../../../Global';
 
-const Section = styled.div`
+const Section = styled.section`
   display: grid;
   align-items: start;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: var(--spacing-medium);
+  column-gap: var(--spacing-large);
   grid-template-areas:
     "header header header"
     "content content content"

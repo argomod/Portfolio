@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { Breakpoint }  from '../../../Global';
 
 // Styles
-const IntroContainer = styled.div`
+const IntroContainer = styled.section`
     display: grid;
     align-items: start;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: var(--spacing-medium);
+    grid-column-gap: var(--spacing-large);
     grid-template-areas:
         "header header header"
         "content content content"
@@ -28,11 +28,9 @@ const IntroContent = styled.div`
 function Intro() {
     return (
         <IntroContainer className="spacing-large-top">
-            <IntroHeader>
-                Hi, I’m Matt Argomaniz.
-            </IntroHeader>
+            <IntroHeader>I'm Matt Argomaniz.</IntroHeader>
             <IntroContent>
-                <p>I am a digital product designer in Portland, OR. I’m especially interested in accessibility, design systems, front-end development, & solving the climate crisis.</p>
+                <p>A digital product designer who is interested in accessibility, design systems, front-end development, & solving the climate crisis.</p>
             </IntroContent>
         </IntroContainer>
     );

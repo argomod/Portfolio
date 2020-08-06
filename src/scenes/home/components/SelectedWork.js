@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Breakpoint }  from '../../../Global';
 
 // Styles
-const SelectedWorkContainer = styled.div`
+const Container = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
-    column-gap: var(--spacing-medium);
+    column-gap: var(--spacing-large);
     grid-template-areas:
         "header header header"
         "content content content"
@@ -19,51 +19,52 @@ const SelectedWorkContainer = styled.div`
         ;
     }
 `
-const SelectedWorkHeader = styled.h2`
+const Header = styled.h2`
     grid-area: header;
     @media ${Breakpoint.medium} {
         top: calc( var(--spacing-large) - (1em/2) );
         position: sticky;
     }
 `
-const SelectedWorkContent = styled.div`
+const Content = styled.ol`
     grid-area: content;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: var(--spacing-xsmall);
+    column-gap: var(--spacing-small);
     row-gap: var(--spacing-small);
 `
-const SelectedWorkCard = styled.div`
-    grid-column: span 1
-`
+const CardStyle = {
+    gridColumn: 'span 1',
+};
+
+const SelectedWorkCard = (props) => {
+    return (
+        <Link className="small-text link-underline-hover" style={CardStyle} to={props.url}>
+            <li>
+                {props.number}<br />
+                {props.title} <br />
+                <span aria-hidden="true">
+                    {props.caption + " →"}
+                </span>
+            </li>
+        </Link>
+
+    );
+}
 
 function SelectedWork() {
     return (
-        <SelectedWorkContainer className="spacing-large-top">
-            <SelectedWorkHeader className="spacing-small-bottom">Selected work</SelectedWorkHeader>
-            <SelectedWorkContent>
-                <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
-                    <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
-                </SelectedWorkCard>
-                <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
-                    <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
-                </SelectedWorkCard>
-                <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
-                    <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
-                </SelectedWorkCard>
-                <SelectedWorkCard>
-                    <Link aria-hidden="true" to="/project-1"><div className="dummy-image-4-by-3"></div></Link>
-                    <h3 className="small-text spacing-xsmall-top">Hackster</h3>
-                    <Link className="small-text no-link-underline" to="/project-1"><p>A website & identity for the quirkiest florist in Long Beach, CA.</p></Link>
-                </SelectedWorkCard>
-            </SelectedWorkContent>
-        </SelectedWorkContainer>
+        <Container className="spacing-large-top">
+            <Header className="spacing-small-bottom">
+                Selected work
+            </Header>
+            <Content>
+                <SelectedWorkCard number={"1."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
+                <SelectedWorkCard number={"2."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
+                <SelectedWorkCard number={"3."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
+                <SelectedWorkCard number={"4."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
+            </Content>
+        </Container>
     );
 }
 

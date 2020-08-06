@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Breakpoint } from '../../../Global';
 
-const Intro = styled.div`
+const Intro = styled.section`
   display: grid;
   align-items: start;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: var(--spacing-medium);
+  column-gap: var(--spacing-large);
   grid-template-areas:
     "header header header"
     "content content content"
@@ -17,16 +18,17 @@ const Intro = styled.div`
     ;
   }
 `
+const IntroContent = styled.div`
+  grid-area: content;
+`
 const IntroHeader = styled.div`
   grid-area: header;
-  display: grid;
-  // @media ${Breakpoint.medium} {
-  //   top: calc( var(--spacing-large) - (1em/2) );
-  //   position: sticky;
-  // }
 `
-const IntroContent = styled.div`
-  grid-area: content
+const IntroDetails = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--spacing-small);
+  row-gap: var(--spacing-small);
 `
 
-export { Intro, IntroHeader, IntroContent };
+export { Intro, IntroContent, IntroHeader, IntroDetails };
