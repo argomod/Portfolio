@@ -8,7 +8,7 @@ const Breakpoint = {
 const WebsiteLayout = styled.div`
   display: grid;
   margin: auto;
-  max-width: 1440px;
+  max-width: 1400px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: env(safe-area-inset-bottom);
   column-gap: var(--spacing-large);
@@ -19,7 +19,7 @@ const WebsiteLayout = styled.div`
     "footer footer footer footer"
   ;
   @media ${Breakpoint.medium} {
-    padding: 0 var(--spacing-large);
+    padding: 0 var(--spacing-medium);
     grid-template-areas:
       "content content content cta"
       "footer footer footer cta"

@@ -8,7 +8,7 @@ const Container = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
-    column-gap: var(--spacing-large);
+    column-gap: var(--spacing-medium);
     grid-template-areas:
         "header header header"
         "content content content"
@@ -39,13 +39,11 @@ const CardStyle = {
 
 const SelectedWorkCard = (props) => {
     return (
-        <Link className="small-text link-underline-hover" style={CardStyle} to={props.url}>
+        <Link className="small-text no-link-underline" style={CardStyle} to={props.url}>
             <li>
                 {props.number}<br />
-                {props.title} <br />
-                <span aria-hidden="true">
-                    {props.caption + " →"}
-                </span>
+                {props.caption}<br />
+                <span aria-hidden="true"> →</span>
             </li>
         </Link>
 
@@ -59,10 +57,10 @@ function SelectedWork() {
                 Selected work
             </Header>
             <Content>
-                <SelectedWorkCard number={"1."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
-                <SelectedWorkCard number={"2."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
-                <SelectedWorkCard number={"3."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
-                <SelectedWorkCard number={"4."} title={"Hackster News"} caption={"A website & identity for the quirkiest florist in Long Beach, CA."} url="/hackster-news" />
+                <SelectedWorkCard number={"1."} title={"Hackster News"} caption={"An entirely new editorial section for Hackster.io."} url="/hackster-news" />
+                <SelectedWorkCard number={"2."} title={"Airbnb Transfers"} caption={"A better way to transfer support tickets for Airbnb."} url="/airbnb-transfers" />
+                <SelectedWorkCard number={"3."} title={"Screen sharing"} caption={"A tool to improve real-time customer support for Airbnb."} url="/hackster-news" />
+                <SelectedWorkCard number={"4."} title={"This website"} caption={"How I designed & coded this website from scratch."} url="/hackster-news" />
             </Content>
         </Container>
     );

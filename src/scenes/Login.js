@@ -112,6 +112,7 @@ class Login extends React.Component {
                 type="text"
                 name="password"
                 inputMode="numeric"
+                placeholder="000000"
                 onChange={this.handleChange}
               />
               {error &&

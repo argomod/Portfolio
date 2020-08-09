@@ -7,7 +7,7 @@ const AboutContainer = styled.section`
     display: grid;
     align-items: start;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: var(--spacing-large);;
+    grid-column-gap: var(--spacing-medium);;
     grid-template-areas:
         "header header header"
         "content content content"
