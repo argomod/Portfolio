@@ -6,6 +6,8 @@ import  Breadcrumb  from '../../components/Breadcrumb'
 import { Section, SectionHeader, SectionContent } from './components/Section';
 import { Intro, IntroContent, IntroHeader, IntroDetails } from './components/Intro';
 import ImageWrapper from './components/ImageWrapper';
+import airbnbTransfersProto1 from './assets/airbnb-transfers-proto-1.gif';
+
 
 //Page data
 const Page = {
@@ -28,8 +30,10 @@ function AirbnbTransfers() {
           <IntroContent>
             <h1 className="spacing-medium-bottom">A better way to transfer support tickets for Airbnb.</h1>
             <IntroDetails className="light-text small-text">
-              <p>Timeline – <br />3 months while working 50% on another project</p>
-              <p>Team – <br />Me, two developers, project manager, researcher, data scientist, writer</p>
+              <p>Team: <br />Me, two developers, project manager, researcher, data scientist, writer</p>
+              <p>Timeline: <br />3 months while working 50% on another project</p>
+              <p>Techniques: <br />User interviews, focus group, prototyping, design systems</p>
+              <p>Tools: <br />Figma, Asana, Slack, Storybook</p>
             </IntroDetails>
           </IntroContent>
         </Intro>
@@ -54,6 +58,10 @@ function AirbnbTransfers() {
             <p>
             Before I start designing, I usually like to complete research. But since I had a relatively short timeline, I first collaborated with our developers to determine which general UI patterns were feasible to build.
             </p>
+            <ImageWrapper className="spacing-medium-top">
+              <img src={airbnbTransfersProto1} alt="I used this lo-fi prototype to brainstorm with the developers how a sheet pattern could be implemented." />
+            </ImageWrapper>
+            <p aria-hidden="true" className="micro-text spacing-small-top spacing-medium-bottom caption-text">I used this lo-fi prototype to brainstorm with the developers how a sheet pattern could be implemented.</p>
             <p>
             There were two main patterns available: a modal or a sheet (a surface that slides in to cover a portion of the web app view). While Nova primarily uses sheets, I opted to use a modal for a few reasons:
             </p>

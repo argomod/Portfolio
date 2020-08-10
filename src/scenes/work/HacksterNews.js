@@ -6,6 +6,7 @@ import  Breadcrumb  from '../../components/Breadcrumb'
 import { Section, SectionHeader, SectionContent } from './components/Section';
 import { Intro, IntroContent, IntroHeader, IntroDetails } from './components/Intro';
 import ImageWrapper from './components/ImageWrapper';
+import hacksterNewsIntro from './assets/hackster-news-intro.gif';
 import hacksterNewsSketch from './assets/hackster-news-sketches.png';
 import hacksterNewsProto1 from './assets/hackster-news-proto-1.png';
 import hacksterNewsProto2 from './assets/hackster-news-proto-2.png';
@@ -37,8 +38,13 @@ function HacksterNews() {
               <p>Timeline: <br />3 months while working 10% on one other project</p>
               <p>Techniques: <br />Remote usability studies, prototyping, front-end development</p>
               <p>Tools: <br />Sketch, Invision, React, Google Hangouts, Slack</p>
-              <p><a target="_blank" href="https://www.hackster.io/news">View the live product on Hackster.io</a></p>
             </IntroDetails>
+
+            <ImageWrapper className="spacing-small-top">
+              <img src={hacksterNewsIntro} alt="This second prototype screen is from the author experience." />
+            </ImageWrapper>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text"><a target="_blank" href="https://www.hackster.io/news">View the live product on Hackster.io.</a></p>
+
           </IntroContent>
         </Intro>
 
@@ -86,6 +92,10 @@ function HacksterNews() {
             <p>
             After creating high-fidelity mockups of 4 key scenes of the reader and author experience (in desktop, tablet, and mobile screen sizes), I organized another formal review with the team. Because I had frequently previewed my work on Slack, there were no surprises.
             </p>
+            <ImageWrapper className="spacing-medium-top">
+              <img src={hacksterNewsProto1} alt="This first prototype screen is from the reader experience." />
+            </ImageWrapper>
+            <p aria-hidden="true" className="micro-text spacing-small-top spacing-medium-bottom caption-text">This first prototype screen is from the reader experience, and the second is from the author experience.</p>
             <p>
             With the team aligned on one design, I built a 70-screen Invision prototype. The Sketch library I previously created for our UI kit was extremely helpful. The first portion of the prototype demonstrated how a reader can navigate to Hackster News, read an article, and view the most recently published articles.
             </p>
@@ -93,12 +103,9 @@ function HacksterNews() {
             The second portion of the prototype demonstrated how an author can compose an article for publishing. This was especially challenging due to our technical constraints. Because Medium uses a WYSIWYG composer, I collaborated with our developers to determine how much we could replicate this experience for our authors.
             </p>
             <ImageWrapper className="spacing-medium-top">
-              <img src={hacksterNewsProto1} alt="This first prototype screen is from the reader experience." />
-            </ImageWrapper>
-            <ImageWrapper className="spacing-xsmall-top">
               <img src={hacksterNewsProto2} alt="This second prototype screen is from the author experience." />
             </ImageWrapper>
-            <p aria-hidden="true" className="micro-text spacing-xsmall-top caption-text">This first prototype screen is from the reader experience, and the second is from the author experience.</p>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">This first prototype screen is from the reader experience, and the second is from the author experience.</p>
           </SectionContent>
         </Section>
 

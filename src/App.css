@@ -25,8 +25,8 @@
 :root {
   --background-color: #ffffff;
   --font-color: #000000;
-  --sec-color: #898989;
-  --container-color: #e8e8e8;
+  --sec-color: #6f6f6f;
+  --container-color: #dcdcdc;
   --cta-background: #707144;
   --visited-link: #0041FF;
 }
@@ -43,7 +43,7 @@
 
 /* 4. Spacing */
 :root {
-  --spacing-xxsmall: calc(var(--line-height)*var(--body-font-size)* 0.2);
+  --spacing-xxsmall: calc(var(--line-height)*var(--body-font-size)* 0.4);
   --spacing-xsmall: calc(var(--line-height)*var(--body-font-size)* 0.75);
   --spacing-small: calc(var(--line-height)*var(--body-font-size)* 1);
   --spacing-medium: calc(var(--line-height)*var(--body-font-size)* 2);
