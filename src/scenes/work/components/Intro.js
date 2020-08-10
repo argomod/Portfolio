@@ -7,7 +7,7 @@ const Intro = styled.section`
   display: grid;
   align-items: start;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: var(--spacing-medium);
+  column-gap: var(--spacing-large);
   grid-template-areas:
     "header header header"
     "content content content"

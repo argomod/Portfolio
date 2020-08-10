@@ -7,7 +7,6 @@ import './App.css';
 import ScrollToTop from './components/ScrollToTop';
 import PrivateRoute from './components/PrivateRoute';
 import CTA  from "./components/CTA";
-import Breadcrumb  from "./components/Breadcrumb";
 import Footer from './components/Footer';
 import Home from './scenes/home/Home';
 import Login from './scenes/Login';

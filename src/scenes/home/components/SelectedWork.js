@@ -8,7 +8,7 @@ const Container = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
-    column-gap: var(--spacing-medium);
+    column-gap: var(--spacing-large);
     grid-template-areas:
         "header header header"
         "content content content"

@@ -103,9 +103,9 @@ function HacksterNews() {
             The second portion of the prototype demonstrated how an author can compose an article for publishing. This was especially challenging due to our technical constraints. Because Medium uses a WYSIWYG composer, I collaborated with our developers to determine how much we could replicate this experience for our authors.
             </p>
             <ImageWrapper className="spacing-medium-top">
-              <img src={hacksterNewsProto2} alt="This second prototype screen is from the author experience." />
+              <img src={hacksterNewsProto2} alt="This second prototype screen is the admin view from the author experience." />
             </ImageWrapper>
-            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">This second prototype screen is from the author experience.</p>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">This second prototype screen is the admin view from the author experience.</p>
           </SectionContent>
         </Section>
 

@@ -18,7 +18,7 @@ const PasswordContainer = styled.section`
   display: grid;
   align-items: start;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: var(--spacing-medium);
+  grid-column-gap: var(--spacing-large);
   grid-template-areas:
     "header header header"
     "content content content"
