@@ -28,9 +28,11 @@ const IntroContent = styled.p`
 function Intro() {
     return (
         <IntroContainer className="spacing-large-top">
-            <IntroHeader>Hi, I'm Matt Argomaniz.</IntroHeader>
-            <IntroContent className="h1">
-                I'm a digital product designer who especially focuses on accessibility, design systems, front-end dev, and solving the climate crisis.
+            <IntroHeader>
+                Hello, I'm Matt Argomaniz.
+            </IntroHeader>
+            <IntroContent>
+                I'm a digital product designer who especially focuses on accessibility, design systems, front-end dev, & solving the climate crisis.
             </IntroContent>
         </IntroContainer>
     );

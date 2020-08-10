@@ -3,10 +3,16 @@ import styled from 'styled-components';
 import store from 'store';
 import { motion } from "framer-motion";
 import { Animation }  from '../Global';
+import { Helmet } from "react-helmet";
 import { Breakpoint }  from '../Global';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect, useHistory, useLocation } from "react-router-dom";
 import { Form, Message } from 'semantic-ui-react';
 import Breadcrumb from '../components/Breadcrumb'
+
+//Page data
+const Page = {
+  title: 'Login'
+}
 
 const PasswordContainer = styled.section`
   display: grid;
@@ -100,6 +106,10 @@ class Login extends React.Component {
     const { error } = this.state;
     return (
       <motion.div initial="initial" animate="in" exit="out" variants={Animation.variants} transition={Animation.transition}>
+
+        {/* Things to but in the head tag */}
+        <Helmet><title>{Page.title + " – Matt Argo"}</title></Helmet>
+
         <PasswordContainer className="spacing-large-top">
           <Header className="spacing-medium-bottom">
             <Breadcrumb />  

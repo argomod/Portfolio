@@ -9,7 +9,7 @@ import ImageWrapper from './components/ImageWrapper';
 import airbnbTransfersIntro from './assets/airbnb-transfers-intro.gif';
 import airbnbTransfersProto1 from './assets/airbnb-transfers-proto-1.gif';
 import airbnbTransfersNotes from './assets/airbnb-transfers-notes.png';
-import airbnbTransfersProto2 from './assets/airbnb-transfers-proto-2.gif';
+import airbnbTransfersProto2 from './assets/airbnb-transfers-proto-2.svg';
 
 
 //Page data
@@ -93,8 +93,8 @@ function AirbnbTransfers() {
             <p>
             One of the most important insights I uncovered was the fear support specialists felt when transferring tickets. Not only were they nervous about being reprimanded for making a mistake, but also they were afraid of creating a poor experience for the customer. That’s because each time a customer is transferred they must explain their issue to a new specialist – potentially extending a quick issue into a week-long hassle.
             </p>
-            <img className="spacing-medium-top" src={airbnbTransfersNotes} alt="Good old paper and pen. I turned my research notes into design requirements in Goodle Docs." />
-            <p aria-hidden="true" className="micro-text spacing-medium-top spacing-medium-bottom caption-text">Good old paper and pen. I turned my research notes into design requirements in Goodle Docs.</p>
+            <img className="spacing-medium-top" src={airbnbTransfersNotes} alt="Good old paper and pen. I turned my research notes into design requirements in Google Docs." />
+            <p aria-hidden="true" className="micro-text spacing-medium-top spacing-medium-bottom caption-text">Good old paper and pen. I turned my research notes into design requirements in Google Docs.</p>
             <p>
             I compiled these insights into a Google Doc and then wrote design requirements using job stories. One for example was: “As a support specialist, when I’m transferring a ticket, I want to know where the ticket is going, so that I can know beforehand that the customer’s issue will be taken care of correctly.”
             </p>
@@ -114,7 +114,7 @@ function AirbnbTransfers() {
             <ImageWrapper className="spacing-medium-top">
               <img src={airbnbTransfersProto2} alt="I used this lo-fi prototype to brainstorm with the developers on how a sheet pattern could be implemented." />
             </ImageWrapper>
-            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">I used this lo-fi prototype to brainstorm with the developers on how a sheet pattern could be implemented.</p>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">I made this landing page so I could share my designs with stakeholders across Airbnb's global offices.</p>
           </SectionContent>
         </Section>
 
