@@ -32,7 +32,7 @@ function HacksterNews() {
             <Breadcrumb />
           </IntroHeader>
           <IntroContent>
-            <h1 className="spacing-medium-bottom">An entirely new editorial section for Hackster.io.</h1>
+            <h1 className="spacing-medium-bottom">An entirely new editorial product for Hackster.io.</h1>
             <IntroDetails className="light-text small-text">
               <p>Team: <br />Me, two developers, cofounder, editor in chief</p>
               <p>Timeline: <br />3 months while working 10% on one other project</p>
@@ -41,9 +41,9 @@ function HacksterNews() {
             </IntroDetails>
 
             <ImageWrapper className="spacing-small-top">
-              <img src={hacksterNewsIntro} alt="This second prototype screen is from the author experience." />
+              <img src={hacksterNewsIntro} alt="You can view the live product on Hackster.io." />
             </ImageWrapper>
-            <p aria-hidden="true" className="micro-text spacing-small-top caption-text"><a target="_blank" href="https://www.hackster.io/news">View the live product on Hackster.io.</a></p>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text"><a target="_blank" href="https://www.hackster.io/news">You can view the live product on Hackster.io.</a></p>
 
           </IntroContent>
         </Intro>
@@ -95,7 +95,7 @@ function HacksterNews() {
             <ImageWrapper className="spacing-medium-top">
               <img src={hacksterNewsProto1} alt="This first prototype screen is from the reader experience." />
             </ImageWrapper>
-            <p aria-hidden="true" className="micro-text spacing-small-top spacing-medium-bottom caption-text">This first prototype screen is from the reader experience, and the second is from the author experience.</p>
+            <p aria-hidden="true" className="micro-text spacing-small-top spacing-medium-bottom caption-text">This first prototype screen is from the reader experience.</p>
             <p>
             With the team aligned on one design, I built a 70-screen Invision prototype. The Sketch library I previously created for our UI kit was extremely helpful. The first portion of the prototype demonstrated how a reader can navigate to Hackster News, read an article, and view the most recently published articles.
             </p>
@@ -105,7 +105,7 @@ function HacksterNews() {
             <ImageWrapper className="spacing-medium-top">
               <img src={hacksterNewsProto2} alt="This second prototype screen is from the author experience." />
             </ImageWrapper>
-            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">This first prototype screen is from the reader experience, and the second is from the author experience.</p>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">This second prototype screen is from the author experience.</p>
           </SectionContent>
         </Section>
 

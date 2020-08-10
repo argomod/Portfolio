@@ -6,7 +6,10 @@ import  Breadcrumb  from '../../components/Breadcrumb'
 import { Section, SectionHeader, SectionContent } from './components/Section';
 import { Intro, IntroContent, IntroHeader, IntroDetails } from './components/Intro';
 import ImageWrapper from './components/ImageWrapper';
+import airbnbTransfersIntro from './assets/airbnb-transfers-intro.gif';
 import airbnbTransfersProto1 from './assets/airbnb-transfers-proto-1.gif';
+import airbnbTransfersNotes from './assets/airbnb-transfers-notes.png';
+import airbnbTransfersProto2 from './assets/airbnb-transfers-proto-2.gif';
 
 
 //Page data
@@ -35,6 +38,12 @@ function AirbnbTransfers() {
               <p>Techniques: <br />User interviews, focus group, prototyping, design systems</p>
               <p>Tools: <br />Figma, Asana, Slack, Storybook</p>
             </IntroDetails>
+
+            <ImageWrapper className="spacing-small-top">
+              <img src={airbnbTransfersIntro} alt="View the prototype on Figma." />
+            </ImageWrapper>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text"><a target="_blank" href="https://www.figma.com/proto/42Oql5oNy3Bz21yx1xrwAA/mattargo?node-id=809%3A41025&viewport=294%2C-6%2C0.05225054919719696&scaling=scale-down">View the prototype on Figma.</a></p>
+
           </IntroContent>
         </Intro>
 
@@ -59,9 +68,9 @@ function AirbnbTransfers() {
             Before I start designing, I usually like to complete research. But since I had a relatively short timeline, I first collaborated with our developers to determine which general UI patterns were feasible to build.
             </p>
             <ImageWrapper className="spacing-medium-top">
-              <img src={airbnbTransfersProto1} alt="I used this lo-fi prototype to brainstorm with the developers how a sheet pattern could be implemented." />
+              <img src={airbnbTransfersProto1} alt="I used this lo-fi prototype to brainstorm with the developers on how a sheet pattern could be implemented. I scrapped the idea." />
             </ImageWrapper>
-            <p aria-hidden="true" className="micro-text spacing-small-top spacing-medium-bottom caption-text">I used this lo-fi prototype to brainstorm with the developers how a sheet pattern could be implemented.</p>
+            <p aria-hidden="true" className="micro-text spacing-small-top spacing-medium-bottom caption-text">I used this lo-fi prototype to brainstorm with the developers on how a sheet pattern could be implemented. I scrapped the idea.</p>
             <p>
             There were two main patterns available: a modal or a sheet (a surface that slides in to cover a portion of the web app view). While Nova primarily uses sheets, I opted to use a modal for a few reasons:
             </p>
@@ -84,6 +93,8 @@ function AirbnbTransfers() {
             <p>
             One of the most important insights I uncovered was the fear support specialists felt when transferring tickets. Not only were they nervous about being reprimanded for making a mistake, but also they were afraid of creating a poor experience for the customer. That’s because each time a customer is transferred they must explain their issue to a new specialist – potentially extending a quick issue into a week-long hassle.
             </p>
+            <img className="spacing-medium-top" src={airbnbTransfersNotes} alt="Good old paper and pen. I turned my research notes into design requirements in Goodle Docs." />
+            <p aria-hidden="true" className="micro-text spacing-medium-top spacing-medium-bottom caption-text">Good old paper and pen. I turned my research notes into design requirements in Goodle Docs.</p>
             <p>
             I compiled these insights into a Google Doc and then wrote design requirements using job stories. One for example was: “As a support specialist, when I’m transferring a ticket, I want to know where the ticket is going, so that I can know beforehand that the customer’s issue will be taken care of correctly.”
             </p>
@@ -100,6 +111,10 @@ function AirbnbTransfers() {
             <p>
             Then I built a high-fidelity prototype in Figma using our internal design system library. I included a landing page that easily guided stakeholders to several distinct parts of the prototype. This was especially useful for communicating my designs remotely with employees across the world.
             </p>
+            <ImageWrapper className="spacing-medium-top">
+              <img src={airbnbTransfersProto2} alt="I used this lo-fi prototype to brainstorm with the developers on how a sheet pattern could be implemented." />
+            </ImageWrapper>
+            <p aria-hidden="true" className="micro-text spacing-small-top caption-text">I used this lo-fi prototype to brainstorm with the developers on how a sheet pattern could be implemented.</p>
           </SectionContent>
         </Section>
 
@@ -134,11 +149,7 @@ function AirbnbTransfers() {
             </p>
           </SectionContent>
         </Section>
-
-
-
-
-
+        
       </motion.div>
     );
 }

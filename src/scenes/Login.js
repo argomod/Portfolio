@@ -33,10 +33,11 @@ const Password = styled.div`
     max-width: 500px;
     font-size: var(--body-font-size) !important;
     padding: 0.4em;
-    background: #f3f3f3;
+    background: var(--third-color);
     border-width: 1px;
     border-radius: 0.4em;
-    border-color: var(--font-color);
+    border-style: solid;
+    border-color: var(--sec-color) !important;
     -webkit-appearance: none;
     margin-top: var(--spacing-xsmall) !important;
     font-family: 'GT America Mono Medium';
@@ -54,7 +55,6 @@ const Password = styled.div`
     border-color: none;
     -webkit-appearance: none;
     border-width: 0;
-    // font-size: var(--body-font-size) !important;
     margin-top: var(--spacing-xsmall) !important;
     :hover {
       cursor: pointer;
@@ -104,7 +104,7 @@ class Login extends React.Component {
             <Breadcrumb />  
           </Header>
           <Password>
-            <p>To respect non-disclosure agreements, some of my work is private. Enter your code below to view everything, or <a href="mailto:name@rapidtables.com">email me</a> if you need one.</p>
+            <p>To honor my non-disclosure agreements, some of my work is private. Enter your code below to view everything, or <a href="mailto:name@rapidtables.com">email me</a> if you need one.</p>
             <Form className="spacing-large-top small-text" error={error} onSubmit={this.onSubmit}>
               <Form.Input
                 inline

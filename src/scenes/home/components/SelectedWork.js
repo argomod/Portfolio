@@ -57,10 +57,21 @@ function SelectedWork() {
                 Selected work
             </Header>
             <Content>
-                <SelectedWorkCard number={"1."} title={"Hackster News"} caption={"An entirely new editorial section for Hackster.io."} url="/hackster-news" />
+                <SelectedWorkCard number={"1."} title={"Hackster News"} caption={"An entirely new editorial product for Hackster.io."} url="/hackster-news" />
                 <SelectedWorkCard number={"2."} title={"Airbnb Transfers"} caption={"A better way to transfer support tickets for Airbnb."} url="/airbnb-transfers" />
-                <SelectedWorkCard number={"3."} title={"Screen sharing"} caption={"A tool to improve real-time customer support for Airbnb."} url="/hackster-news" />
-                <SelectedWorkCard number={"4."} title={"This website"} caption={"How I designed & coded this website from scratch."} url="/hackster-news" />
+                <li className="light-text small-text no-link-underline">
+                    3.<br />
+                    A tool to improve real-time customer support for Airbnb.<br />
+                    Coming soon.
+                </li>
+                <li className="light-text small-text no-link-underline">
+                    4.<br />
+                    How I designed & coded this website from scratch.<br />
+                    Coming soon.
+                </li>
+
+                {/* <SelectedWorkCard number={"3."} title={"Screen sharing"} caption={"A tool to improve real-time customer support for Airbnb."} url="/hackster-news" /> */}
+                {/* <SelectedWorkCard number={"4."} title={"This website"} caption={"How I designed & coded this website from scratch."} url="/hackster-news" /> */}
             </Content>
         </Container>
     );
