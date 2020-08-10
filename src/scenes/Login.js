@@ -31,6 +31,7 @@ const Password = styled.div`
   input {
     width: 100%;
     max-width: 500px;
+    color: var(--font-color);
     font-size: var(--body-font-size) !important;
     padding: 0.4em;
     background: var(--third-color);
