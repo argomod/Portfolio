@@ -33,13 +33,13 @@ function AirbnbTransfers() {
           <IntroContent>
             <h1 className="spacing-medium-bottom">A better way to transfer support tickets for Airbnb.</h1>
             <IntroDetails className="light-text small-text">
-              <p>Team: <br />Me, two developers, project manager, researcher, data scientist, writer</p>
-              <p>Timeline: <br />3 months while working 50% on another project</p>
-              <p>Techniques: <br />User interviews, focus group, prototyping, design systems</p>
-              <p>Tools: <br />Figma, Asana, Slack, Storybook</p>
+              <li>Team: <br />Me, two developers, project manager, researcher, data scientist, writer</li>
+              <li>Timeline: <br />3 months while working 50% on another project</li>
+              <li>Techniques: <br />User interviews, focus group, prototyping, design systems</li>
+              <li>Tools: <br />Figma, Asana, Slack, Storybook</li>
             </IntroDetails>
 
-            <ImageWrapper className="spacing-small-top">
+            <ImageWrapper className="spacing-medium-top">
               <img src={airbnbTransfersIntro} alt="View the prototype on Figma." />
             </ImageWrapper>
             <p aria-hidden="true" className="micro-text spacing-small-top caption-text"><a target="_blank" href="https://www.figma.com/proto/42Oql5oNy3Bz21yx1xrwAA/mattargo?node-id=809%3A41025&viewport=294%2C-6%2C0.05225054919719696&scaling=scale-down">View the prototype on Figma.</a></p>

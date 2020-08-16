@@ -9,7 +9,7 @@ const AboutContainer = styled.section`
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: var(--spacing-large);;
     grid-template-areas:
-        "header header header"
+        "header header ."
         "content content content"
     ;
     @media ${Breakpoint.medium} {

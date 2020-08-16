@@ -10,7 +10,7 @@ const Container = styled.section`
     align-items: start;
     column-gap: var(--spacing-large);
     grid-template-areas:
-        "header header header"
+        "header header ."
         "content content content"
     ;
     @media ${Breakpoint.medium} {

@@ -2,7 +2,7 @@
 
 /* 1. Global */
 :root {
-  --line-height: 1.37;
+  --line-height: 1.28;
 }
 
 /* 2. Font sizes */
@@ -24,7 +24,7 @@
 /* 3. Colors */
 :root {
   --background-color: #ffffff;
-  --font-color: #0a0a0a;
+  --font-color: #000000;
   --sec-color: #6f6f6f;
   --third-color: #ececec;
   --container-color: #dcdcdc;
@@ -86,7 +86,7 @@ body {
   font-size: var(--body-font-size);
   line-height: var(--line-height);
   font-family: 'GT America Medium', sans-serif;
-  -webkit-font-smoothing: subpixel-antialiased
+  -webkit-font-smoothing: antialiased
 }
 .small-text { font-size: var(--small-font-size) !important }
 .micro-text { font-size: var(--micro-font-size) !important }
@@ -98,7 +98,7 @@ body {
   text-align: center;
 }
 p:not(:last-child), h2, h1 {
-  margin-bottom: var(--spacing-xsmall)
+  margin-bottom: var(--spacing-small)
 }
 @font-face {
   font-family: 'GT America Medium';

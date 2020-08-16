@@ -21,10 +21,12 @@ const Page = {
 //COMPONENT
 function HacksterNews() {
     return (
-      <motion.div initial="initial" animate="in" exit="out" variants={Animation.variants} transition={Animation.transition}>
+      <React.Fragment>
 
-        {/* Things to but in the head tag */}
-        <Helmet><title>{Page.title + " – Matt Argo"}</title></Helmet>
+      {/* Things to put in the head tag */}
+      <Helmet><title>{Page.title + " – Matt Argo"}</title></Helmet>
+
+      <motion.div initial="initial" animate="in" exit="out" variants={Animation.variants} transition={Animation.transition}>
 
         {/* Introduction to the project */}
         <Intro className="spacing-large-top">
@@ -34,13 +36,13 @@ function HacksterNews() {
           <IntroContent>
             <h1 className="spacing-medium-bottom">An entirely new editorial product for Hackster.io.</h1>
             <IntroDetails className="light-text small-text">
-              <p>Team: <br />Me, two developers, cofounder, editor in chief</p>
-              <p>Timeline: <br />3 months while working 10% on one other project</p>
-              <p>Techniques: <br />Remote usability studies, prototyping, front-end development</p>
-              <p>Tools: <br />Sketch, Invision, React, Google Hangouts, Slack</p>
+              <li>Team: <br />Me, two developers, cofounder, editor in chief</li>
+              <li>Timeline: <br />3 months while working 10% on one other project</li>
+              <li>Techniques: <br />Remote usability studies, prototyping, front-end development</li>
+              <li>Tools: <br />Sketch, Invision, React, Google Hangouts, Slack</li>
             </IntroDetails>
 
-            <ImageWrapper className="spacing-small-top">
+            <ImageWrapper className="spacing-medium-top">
               <img src={hacksterNewsIntro} alt="You can view the live product on Hackster.io." />
             </ImageWrapper>
             <p aria-hidden="true" className="micro-text spacing-small-top caption-text"><a target="_blank" href="https://www.hackster.io/news">You can view the live product on Hackster.io.</a></p>
@@ -160,6 +162,7 @@ function HacksterNews() {
 
 
       </motion.div>
+      </React.Fragment>
     );
 }
 

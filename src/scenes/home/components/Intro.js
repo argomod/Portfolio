@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Breakpoint }  from '../../../Global';
+import  Breadcrumb   from '../../../components/Breadcrumb';
 
 // Styles
 const IntroContainer = styled.section`
@@ -9,7 +10,7 @@ const IntroContainer = styled.section`
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: var(--spacing-large);
     grid-template-areas:
-        "header header header"
+        "header header ."
         "content content content"
     ;
     @media ${Breakpoint.medium} {
@@ -21,7 +22,7 @@ const IntroContainer = styled.section`
 const IntroHeader = styled.h1`
     grid-area: header;
 `
-const IntroContent = styled.p`
+const IntroContent = styled.div`
     grid-area: content
 `
 
@@ -29,10 +30,10 @@ function Intro() {
     return (
         <IntroContainer className="spacing-large-top">
             <IntroHeader>
-                Hello, I'm Matt Argomaniz.
+                Hi, I'm Matt Argomaniz.
             </IntroHeader>
             <IntroContent>
-                I'm a digital product designer who especially focuses on accessibility, design systems, front-end dev, & solving the climate crisis.
+                <p>A digital product designer who focuses on accessibility, design systems, front-end dev, & solving the climate crisis.</p>
             </IntroContent>
         </IntroContainer>
     );

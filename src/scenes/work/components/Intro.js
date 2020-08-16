@@ -9,7 +9,7 @@ const Intro = styled.section`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: var(--spacing-large);
   grid-template-areas:
-    "header header header"
+    "header header ."
     "content content content"
     ;
   @media ${Breakpoint.medium} {
@@ -24,14 +24,11 @@ const IntroContent = styled.div`
 const IntroHeader = styled.div`
   grid-area: header;
 `
-const IntroDetails = styled.div`
+const IntroDetails = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: var(--spacing-small);
   row-gap: var(--spacing-small);
-  p {
-    grid-column: span 2
-  }
 `
 
 export { Intro, IntroContent, IntroHeader, IntroDetails };
