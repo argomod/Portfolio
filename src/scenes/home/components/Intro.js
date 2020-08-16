@@ -30,7 +30,7 @@ function Intro() {
     return (
         <IntroContainer className="spacing-large-top">
             <IntroHeader>
-                Hi, I'm Matt Argomaniz.
+                Hello, I'm Matt Argomaniz.
             </IntroHeader>
             <IntroContent>
                 <p>A digital product designer who focuses on accessibility, design systems, front-end dev, & solving the climate crisis.</p>
