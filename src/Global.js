@@ -14,7 +14,7 @@ const Animation = {
   transition: {
     type: "tween",
     ease: "easeOut",
-    duration: .2
+    duration: .35
   }
 }
 
