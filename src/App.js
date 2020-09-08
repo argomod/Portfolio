@@ -68,8 +68,8 @@ const Footer = styled.footer`
     align-self: end;
     max-width: calc( (${Variables.pageWidth} - ${Variables.gap} - ${Variables.gap} - ${Variables.gap} - ${Variables.pageMargin} - ${Variables.pageMargin} ) * (1/4) );
     position: sticky;
-    margin-top: 280px;
     bottom: var(--spacing-xlarge);
+    z-index:-1;
   }
 `
 
