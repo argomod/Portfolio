@@ -63,7 +63,7 @@ const CTA = styled.div`
 `
 const Footer = styled.footer`
   grid-area: footer;
-  margin: var(--spacing-large) 0;
+  margin: var(--spacing-xlarge) 0;
   @media ${Breakpoint.medium} {
     align-self: end;
     max-width: calc( (${Variables.pageWidth} - ${Variables.gap} - ${Variables.gap} - ${Variables.gap} - ${Variables.pageMargin} - ${Variables.pageMargin} ) * (1/4) );
@@ -105,7 +105,7 @@ class App extends Component {
         <Footer>
           <h3 className="spacing-small-bottom">Thank you for visiting.</h3>
           <ul>
-              <li><a className="light-text" href="mailto:name@rapidtables.com">Send me an email.</a></li>
+              <li><a className="light-text" href="mailto:mattargomaniz@gmail.com">Send me an email.</a></li>
               <li><a className="light-text" target="_blank" href="https://margomaniz.tumblr.com/">Lurk on my Tumblr.</a></li>
               <li><a className="light-text" target="_blank" href="https://github.com/argomod">View my code on GitHub.</a></li>
           </ul>    
