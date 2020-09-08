@@ -48,7 +48,7 @@ function Home() {
                 <p>I like working with passionate folks & companies whose purpose extends beyond what they sell.</p>
                 <p>I specialize in user experience and user interface design. Or in other words, I design nice applications for screens. My process involves posing questions to users and stakeholders, gathering data, collaborating, pitching, iterating, prototyping, and building.</p>
                 <p>I am especially passionate about inclusive design, accessibility, and the intersection of design and development. I am also an evironmentalist and believe good design can help mitigate our climate crisis.</p>
-                <p>I am currently a product designer at <a target="_blank" href="https://www.arcadia.com/">Arcadia</a>.</p>
+                <p>I am currently a product designer at <a target="_blank" href="https://www.arcadia.com/">Arcadia</a>, whose mission is to shift the planet to 100% renewable energy.</p>
             </div>
 
         </motion.div>
