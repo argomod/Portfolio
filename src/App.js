@@ -10,6 +10,7 @@ import Home from './scenes/home/Home';
 import Login from './scenes/Login';
 import HacksterNews from './scenes/work/HacksterNews';
 import AirbnbTransfers from './scenes/work/AirbnbTransfers';
+import AirbnbScreenSharing from './scenes/work/AirbnbScreenSharing';
 
 const Variables = {
   pageWidth: '1340px',
@@ -59,6 +60,7 @@ const CTA = styled.div`
     max-width: calc( (${Variables.pageWidth} - ${Variables.gap} - ${Variables.gap} - ${Variables.gap} - ${Variables.pageMargin} - ${Variables.pageMargin} ) * (1/4) );
     position: sticky;
     top: var(--spacing-xlarge);
+    z-index: 2;
   }
 `
 const Footer = styled.footer`
@@ -69,7 +71,7 @@ const Footer = styled.footer`
     max-width: calc( (${Variables.pageWidth} - ${Variables.gap} - ${Variables.gap} - ${Variables.gap} - ${Variables.pageMargin} - ${Variables.pageMargin} ) * (1/4) );
     position: sticky;
     bottom: var(--spacing-xlarge);
-    z-index:-1;
+    z-index: 1;
   }
 `
 
@@ -91,6 +93,11 @@ class App extends Component {
             <ScrollToTop />
             <HacksterNews />
           </Route>
+          {/* Page for Airbnb Screen Sharing */}
+          <PrivateRoute path="/airbnb-screen-sharing">
+            <ScrollToTop />
+            <AirbnbScreenSharing />
+          </PrivateRoute>
           {/* Page for Login */}
           <Route path="/login">
             <ScrollToTop />

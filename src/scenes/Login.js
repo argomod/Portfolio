@@ -84,7 +84,7 @@ class Login extends React.Component {
         <BackHome />
 
         <Password>
-          <p>To honor my non-disclosure agreements, some of my work is private. Enter your code below to view everything, or <a href="mailto:name@rapidtables.com">email me</a> if you need one.</p>
+          <p>To honor my non-disclosure agreements, some of my work is private. Enter your code below to view everything, or <a href="mailto:mattargomaniz@gmail.com">email me</a> if you need one.</p>
           <Form className="spacing-medium-top" error={error} onSubmit={this.onSubmit}>
             <Form.Input
               inline

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Animation }  from '../../Global';
 import { Helmet } from "react-helmet";
 
-const SelectedWorkCard = (props) => {
+const SelectedWorkItem = (props) => {
     return (
         <li>
         <Link className="underline-link" to={props.url}>
@@ -31,24 +31,22 @@ function Home() {
             <div>
                 <h2 className="spacing-large-top spacing-small-bottom">Selected work</h2>
                 <ol>
-                    <SelectedWorkCard number={"1."} title={"Hackster News"} caption={"An entirely new editorial product for Hackster.io."} url="/hackster-news" />
-                    <SelectedWorkCard number={"2."} title={"Airbnb Transfers"} caption={"A better way to transfer support tickets for Airbnb."} url="/airbnb-transfers" />
-                    <li className="light-text">
-                        A tool to improve real-time customer support for Airbnb.<br />
-                        Coming soon.
-                    </li>
-                    <li className="light-text">
+                    <SelectedWorkItem number={"1."} title={"Hackster News"} caption={"An entirely new editorial product for Hackster.io."} url="/hackster-news" />
+                    <SelectedWorkItem number={"2."} title={"Airbnb Transfers"} caption={"A better way to transfer support tickets for Airbnb."} url="/airbnb-transfers" />
+                    <SelectedWorkItem number={"2."} title={"Airbnb Screen Sharing"} caption={"A tool for real-time website & app support for Airbnb."} url="/airbnb-screen-sharing" />
+                    {/* <li className="light-text">
                         How I designed & coded this website from scratch.<br />
                         Coming soon.
-                    </li>
+                    </li> */}
                 </ol>
             </div>
             <div>
                 <h2 className="spacing-large-top">More about me</h2>
                 <p>I like working with passionate folks & companies whose purpose extends beyond what they sell.</p>
-                <p>I specialize in user experience and user interface design. Or in other words, I design nice applications for screens. My process involves posing questions to users and stakeholders, gathering data, collaborating, pitching, iterating, prototyping, and building.</p>
-                <p>I am especially passionate about inclusive design, accessibility, and the intersection of design and development. I am also an evironmentalist and believe good design can help mitigate our climate crisis.</p>
-                <p>I am currently a product designer at <a target="_blank" href="https://www.arcadia.com/">Arcadia</a>, whose mission is to shift the planet to 100% renewable energy. I've also designed for <a target="_blank" href="https://www.airbnb.com/">Airbnb</a> and <a target="_blank" href="https://www.hackster.io/">Hackster</a>.</p>
+                <p>I specialize in user experience and user interface design. Or in other words, I strive to design nice applications for screens. My process involves posing questions to users and stakeholders, gathering data, collaborating, pitching, iterating, prototyping, and building.</p>
+                <p>I am especially passionate about inclusive design, accessibility, and the intersection of design and development. I believe good design respects the needs of all humans and the environment.</p>
+                <p>If I'm not in front of a screen, I'm likely either skateboarding, walking one of my foster dogs, or reading about architecture.</p>
+                <p>I am currently a product designer at <a target="_blank" href="https://www.arcadia.com/">Arcadia</a>. I've also designed for <a target="_blank" href="https://www.airbnb.com/">Airbnb</a> and <a target="_blank" href="https://www.hackster.io/">Hackster</a>.</p>
             </div>
 
         </motion.div>

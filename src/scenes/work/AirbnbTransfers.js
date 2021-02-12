@@ -25,14 +25,12 @@ function AirbnbTransfers() {
         <BackHome />
 
         <div >
-          <h1 className="spacing-medium-bottom">A better way to transfer support tickets for Airbnb.</h1>
-          <p className="light-text">I worked with two developers, a project manager, researcher, data scientist, and writer. It took 3 months while I worked 50% on
-            one other project. I used user interviews, focus group, prototyping, design systems.
-          </p>
+          <h1 className="spacing-small-bottom">A better way to transfer support tickets for Airbnb.</h1>
+          <p className="light-text">I worked with two engineers, a project manager, researcher, data scientist, and writer. It took 3 months while I worked 50% on one other project. I utilized user interviews, focus groups, prototypes, and our design system.</p>
           <ImageWrapper className="spacing-medium-top">
-            <img src={airbnbTransfersIntro} alt="View the prototype on Figma." />
+            <img src={airbnbTransfersIntro} alt="View the prototype in Figma." />
           </ImageWrapper>
-          <p aria-hidden="true" className="small-text spacing-small-top caption-text"><a target="_blank" href="https://www.figma.com/proto/42Oql5oNy3Bz21yx1xrwAA/mattargo?node-id=809%3A41025&viewport=294%2C-6%2C0.05225054919719696&scaling=scale-down">View the prototype on Figma.</a></p>
+          <p aria-hidden="true" className="small-text spacing-small-top caption-text"><a target="_blank" href="https://www.figma.com/proto/42Oql5oNy3Bz21yx1xrwAA/mattargo?node-id=809%3A41025&viewport=294%2C-6%2C0.05225054919719696&scaling=scale-down">View the prototype in Figma.</a></p>
         </div>
 
         <div className="spacing-large-top">

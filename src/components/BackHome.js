@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const Container = styled.div`
     position: sticky;
     top: var(--spacing-medium);
+    z-index: 2;
     @media ${Breakpoint.medium} {
         top: var(--spacing-large);
     }

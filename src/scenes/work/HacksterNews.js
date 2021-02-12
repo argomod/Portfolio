@@ -28,7 +28,7 @@ function HacksterNews() {
 
         <div>
           <h1 className="spacing-small-bottom">An entirely new editorial product for Hackster.io.</h1>
-          <p className="light-text">I worked with two developers, our cofounder, and our editor in chief. It took 3 months while I worked 10% on
+          <p className="light-text">I worked with two engineers, our cofounder, our editor in chief, and <a target="_blank" href="https://www.maggiyang.com/">Maggi Yang</a>. It took 4 months while I worked 10% on
             one other project. I used remote usability studies, prototyping, front-end dev, Sketch, Invision, and React.
           </p>
           <ImageWrapper className="spacing-medium-top">
@@ -50,7 +50,7 @@ function HacksterNews() {
         <div>
           <h2 className="spacing-large-top">Concepting</h2>
           <p>
-          After interviewing our editor in chief and cofounder, I started drafting design requirements and a plan to deliver a final product within my 5 month timeline. Then I started sketching.
+          After interviewing our editor in chief and cofounder, I started drafting design requirements and a plan to deliver a final product within my timeline. Then I started sketching.
           </p>
           <p>
           I decided early on to design the reader experience before the author experience. This allowed me to define a visual style that I could adapt to my admin designs, which could evolve into the start of Hackster's design system.
@@ -113,7 +113,7 @@ function HacksterNews() {
           <ImageWrapper className="spacing-medium-top">
             <img src={hacksterNewsDemo} alt="I created this prototype using actual React code." />
           </ImageWrapper>
-          <p aria-hidden="true" className="small-text spacing-xsmall-top caption-text">I created this prototype using actual React code. Check out the <a target="_blank" href="https://argomod.github.io/hackster-news/">live demo.</a></p>
+          <p aria-hidden="true" className="small-text spacing-small-top caption-text">I created this prototype using actual React code. Check out the <a target="_blank" href="https://argomod.github.io/hackster-news/">live demo.</a></p>
         </div>
 
         <div>

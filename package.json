@@ -1,5 +1,6 @@
 {
-  "name": "matt-argo-v3",
+  "name": "matt-argomaniz",
+  "homepage": "http://mattargo.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
